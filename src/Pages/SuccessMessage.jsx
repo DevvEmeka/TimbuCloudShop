@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const SuccessMessage = () => {
   return (
@@ -14,14 +15,14 @@ const SuccessMessage = () => {
             Your order is successfully place
           </h3>
           <p className="mt-7 text-[#474747] text-[17px] font-normal">
-            Your order is on its way! We've received it and are
-            processing it for fulfillment. You'll receive a confirmation email
-            with more details shortly, including estimated delivery timelines.
+            Your order is on its way! We've received it and are processing it
+            for fulfillment. You'll receive a confirmation email with more
+            details shortly, including estimated delivery timelines.
           </p>
         </div>
         <div className="flex md:mt-7 mt-10 flex-col md:flex-row items-center justify-center gap-4 overflow-hidden">
           <button className="border-[2px] text-lg font-medium border-[#AFC2FF] text-[#007BFF] rounded-[4px] py-[14px] px-5">
-            Return home
+            <Link to="/">Return home</Link>
           </button>
           <div className="bg-[#007BFF] flex items-center py-4 md:px-5 px-[18px] gap-2 rounded-[4px]">
             <button className="font-medium text-[#FFFFFF] text-lg">

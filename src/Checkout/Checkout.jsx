@@ -19,25 +19,26 @@ const Checkout = () => {
       {/* Checkout */}
       {/* Products NavBar */}
       <>
-        <div className="bg-[#E22367] w-full mt-[36px] px-[29px] flex justify-between items-center">
-          <div className="flex justify-between items-center py-5">
-            <div className="flex items-center gap-[4px]">
-              <RxHamburgerMenu className="font-semibold text-[#FFFFFF] h-[24px] w-[24px]" />
-              <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">
-                All Categories
-              </div>
-            </div>
-            <div className="cursor-pointer flex items-center justify-center gap-[2px]">
-              <div className="text-[#FFFFFF] font-medium text-[16px]">
-                Products
-              </div>
-              <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
-            </div>
-            <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">Blog</div>
-            <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">
-              Contact
+        <div className="bg-[#E22367] w-full mt-[36px] px-[29px] flex overflow-hidden justify-between items-center">
+        <div className="flex gap-6 justify-between items-center py-5">
+          <div className="flex items-center gap-[4px]">
+            <RxHamburgerMenu className="font-semibold text-[#FFFFFF] h-[24px] w-[24px]" />
+            <div className="text-[#FFFFFF] text-[10px] md:text-[16px] font-medium">
+              All Categories
             </div>
           </div>
+          <div className="flex items-center justify-center gap-[2px]">
+            <Link
+              to="/checkout"
+              className="text-[#FFFFFF] font-medium text-[10px] md:text-[16px] cursor-pointer"
+            >
+              Products/Checkout
+            </Link>
+            <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
+          </div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Blog</div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Contact</div>
+        </div>
           <div className="hidden md:block">
             <div className="gap-6 flex items-center">
               <div className="uppercase text-[#FFFFFF] text-sm font-bold">
@@ -174,8 +175,8 @@ const Checkout = () => {
               Do you have a Promo Code
             </p>
 
-            <div className="md:items-center mt-2 flex p-4 gap-6 clear-start">
-              <div className="w-[105px] h-[1700px] md:w-[50%] md:h-[50%]">
+            <div className="md:items-center -mb-[1630px] mt-2 flex p-4 gap-6 clear-start">
+              <div className="w-[250px] h-[1700px] md:w-[50%] md:h-[50%]">
                 <img
                   className="w-full"
                   src="/src/assets/Checkout.png"
@@ -189,7 +190,7 @@ const Checkout = () => {
                 </div>
                 <div className="gap-2 mt-2 flex">
                   <div className="text-[14px] font-bold text-[#1C1C1C]">
-                    1 x{" "}
+                    1 <span className="ml-[2px]">x</span>{" "}
                     <span className="text-[#007BFF] font-bold text-sm">
                       {" "}
                       $146.99
@@ -213,7 +214,7 @@ const Checkout = () => {
                 </div>
                 <div className="gap-2 mt-2 flex">
                   <div className="text-[14px] font-bold text-[#1C1C1C]">
-                    3 x{" "}
+                    3 <span className="ml-[2px]"></span>x{" "}
                     <span className="text-[#007BFF] font-bold text-sm">
                       {" "}
                       $146.99
@@ -252,11 +253,11 @@ const Checkout = () => {
 
           {/* Check-out Button */}
           <div className="mt-6">
-            <Link to="/SuccessMessage">
               <button className="p-4 w-[356px] cursor-pointer md:w-[600px] text-[#FFFFFF] text-lg font-medium rounded text-center bg-[#007BFF]">
+               <Link to="/SuccessMessage">
                 Checkout
+                </Link>
               </button>
-            </Link>
           </div>
         </div>
       </div>

@@ -19,35 +19,35 @@ const Home = () => {
       <Navbar />
 
       {/* Products NavBar */}
-      <section className="bg-[#E22367] w-full mt-[36px] px-[29px] flex items-center justify-between">
+      <section className="bg-[#E22367] w-full mt-[36px] px-[29px] flex items-center justify-between overflow-hidden">
         <div className="flex gap-6 justify-between items-center py-5">
           <div className="flex items-center gap-[4px]">
             <RxHamburgerMenu className="font-semibold text-[#FFFFFF] h-[24px] w-[24px]" />
-            <div className="text-[#FFFFFF] text-[16px] font-medium">
+            <div className="text-[#FFFFFF] text-[10px] md:text-[16px] font-medium">
               All Categories
             </div>
           </div>
           <div className="flex items-center justify-center gap-[2px]">
             <Link
               to="checkout"
-              className="text-[#FFFFFF] font-medium text-[16px] cursor-pointer"
+              className="text-[#FFFFFF] font-medium text-[10px] md:text-[16px] cursor-pointer"
             >
               Products/Checkout
             </Link>
             <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
           </div>
-          <div className="text-[#FFFFFF] text-[16px] font-medium">Blog</div>
-          <div className="text-[#FFFFFF] text-[16px] font-medium">Contact</div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Blog</div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Contact</div>
         </div>
         <div className="hidden sm:block">
           <div className="gap-6 flex items-center">
-            <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+            <div className="uppercase text-[#FFFFFF] text-[12px] md:text-[16px] font-bold">
               limited sale
             </div>
-            <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+            <div className="uppercase text-[#FFFFFF] text-[12px] md:text-[16px] font-bold">
               best seller
             </div>
-            <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+            <div className="uppercase text-[#FFFFFF] text-[12px] md:text-[16px] font-bold">
               new arrivals
             </div>
           </div>

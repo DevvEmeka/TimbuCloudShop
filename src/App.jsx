@@ -10,7 +10,7 @@ import SuccessMessage from "./Pages/SuccessMessage";
 const App = () => {
   return (
     <BrowserRouter>
-      <main className="h-screen">
+      <main className="m-0 p-0">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="TopProducts" element={<Checkout />}></Route>
@@ -18,12 +18,6 @@ const App = () => {
           <Route path="Checkout" element={<Checkout />}></Route>
           <Route path="SuccessMessage" element={<SuccessMessage />}></Route>
         </Routes>
-        {/* <Navbar />
-        <Home />
-        <TopProducts />
-        <Footer />
-        <Checkout /> */}
-        {/* <SuccessMessage /> */}
       </main>
     </BrowserRouter>
   );
