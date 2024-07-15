@@ -23,6 +23,7 @@ const App = () => {
         <TopProducts />
         <Footer />
         <Checkout /> */}
+        {/* <SuccessMessage /> */}
       </main>
     </BrowserRouter>
   );

@@ -5,6 +5,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SuccessMessage from "../Pages/SuccessMessage";
+
 
 const Checkout = () => {
   return (
@@ -21,18 +23,18 @@ const Checkout = () => {
           <div className="flex justify-between items-center py-5">
             <div className="flex items-center gap-[4px]">
               <RxHamburgerMenu className="font-semibold text-[#FFFFFF] h-[24px] w-[24px]" />
-              <div className="text-[#FFFFFF] text-[16px] font-medium">
+              <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">
                 All Categories
               </div>
             </div>
-            <div className="flex items-center justify-center gap-[2px]">
+            <div className="cursor-pointer flex items-center justify-center gap-[2px]">
               <div className="text-[#FFFFFF] font-medium text-[16px]">
                 Products
               </div>
               <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
             </div>
-            <div className="text-[#FFFFFF] text-[16px] font-medium">Blog</div>
-            <div className="text-[#FFFFFF] text-[16px] font-medium">
+            <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">Blog</div>
+            <div className="cursor-pointer text-[#FFFFFF] text-[16px] font-medium">
               Contact
             </div>
           </div>
@@ -52,7 +54,9 @@ const Checkout = () => {
         </div>
         <div className="hidden sm:block">
           <div className="flex items-center gap-[20px] mt-5 px-[29px]">
-            <Link to="/" className="text-[#919191] text-sm font-bold">Home </Link>
+            <Link to="/" className="text-[#919191] text-sm font-bold">
+              Home{" "}
+            </Link>
             <div>
               <FaArrowRight className="text-[#919191] w-[20px] h-[20px]" />
             </div>
@@ -248,9 +252,11 @@ const Checkout = () => {
 
           {/* Check-out Button */}
           <div className="mt-6">
-            <button className="p-4 w-[356px] md:w-[600px] text-[#FFFFFF] text-lg font-medium rounded text-center bg-[#007BFF]">
-              Checkout
-            </button>
+            <Link to="/SuccessMessage">
+              <button className="p-4 w-[356px] cursor-pointer md:w-[600px] text-[#FFFFFF] text-lg font-medium rounded text-center bg-[#007BFF]">
+                Checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>

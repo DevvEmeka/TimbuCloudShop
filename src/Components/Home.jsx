@@ -28,7 +28,10 @@ const Home = () => {
             </div>
           </div>
           <div className="flex items-center justify-center gap-[2px]">
-            <Link to="checkout" className="text-[#FFFFFF] font-medium text-[16px] cursor-pointer">
+            <Link
+              to="checkout"
+              className="text-[#FFFFFF] font-medium text-[16px] cursor-pointer"
+            >
               Products/Checkout
             </Link>
             <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
@@ -677,11 +680,11 @@ const Home = () => {
         </div>
       </section>
 
-{/* Top Products */}
-<TopProducts />
+      {/* Top Products */}
+      <TopProducts />
 
       {/* NavBar */}
-      <Footer/>
+      <Footer />
     </section>
   );
 };
