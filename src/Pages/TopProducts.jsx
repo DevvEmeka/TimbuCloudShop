@@ -21,7 +21,7 @@ const TopProducts = () => {
             rate, sleep), Bluetooth calling & music, a 2.09" display, and
             supports various sports modes.
           </p>
-          <div className="bg-[#007BFF] mt-8 rounded-[4px] p-4 w-[151px] flex items-center gap-[10px]">
+          <div className="bg-[#007BFF] mt-8 cursor-pointer rounded-[4px] p-4 w-[151px] flex items-center gap-[10px]">
             <div className="text-[#FFFFFF] text-[18px] font-medium">
               Shop Now
             </div>

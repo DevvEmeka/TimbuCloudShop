@@ -22,8 +22,8 @@ const Checkout = () => {
         <div className="bg-[#E22367] w-full mt-[36px] px-[29px] flex overflow-hidden justify-between items-center">
         <div className="flex gap-6 justify-between items-center py-5">
           <div className="flex items-center gap-[4px]">
-            <RxHamburgerMenu className="font-semibold text-[#FFFFFF] h-[24px] w-[24px]" />
-            <div className="text-[#FFFFFF] text-[10px] md:text-[16px] font-medium">
+            <RxHamburgerMenu className="font-semibold cursor-pointer text-[#FFFFFF] h-[24px] w-[24px]" />
+            <div className="text-[#FFFFFF] cursor-pointer text-[10px] md:text-[16px] font-medium">
               All Categories
             </div>
           </div>
@@ -36,18 +36,18 @@ const Checkout = () => {
             </Link>
             <RiArrowDropDownLine className="text-[#FFFFFF] h-[30px] w-[30px]" />
           </div>
-          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Blog</div>
-          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] font-medium">Contact</div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] cursor-pointer font-medium">Blog</div>
+          <div className="text-[#FFFFFF] text-[12px] md:text-[16px] cursor-pointer font-medium">Contact</div>
         </div>
           <div className="hidden md:block">
             <div className="gap-6 flex items-center">
-              <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+              <div className="uppercase text-[#FFFFFF] cursor-pointer text-sm font-bold">
                 limited sale
               </div>
-              <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+              <div className="uppercase text-[#FFFFFF] cursor-pointer text-sm font-bold">
                 best seller
               </div>
-              <div className="uppercase text-[#FFFFFF] text-sm font-bold">
+              <div className="uppercase text-[#FFFFFF] cursor-pointer text-sm font-bold">
                 new arrivals
               </div>
             </div>
@@ -55,25 +55,25 @@ const Checkout = () => {
         </div>
         <div className="hidden sm:block">
           <div className="flex items-center gap-[20px] mt-5 px-[29px]">
-            <Link to="/" className="text-[#919191] text-sm font-bold">
+            <Link to="/" className="text-[#919191] cursor-pointer text-sm font-bold">
               Home{" "}
             </Link>
             <div>
               <FaArrowRight className="text-[#919191] w-[20px] h-[20px]" />
             </div>
-            <div className="text-[#919191] text-sm font-bold">
+            <div className="text-[#919191] cursor-pointer  text-sm font-bold">
               Product Listing
             </div>
             <div>
               <FaArrowRight className="text-[#919191] cursor-pointer w-[20px] h-[20px]" />
             </div>
-            <div className="text-[#919191] text-sm font-bold">
+            <div className="text-[#919191] cursor-pointer text-sm font-bold">
               Computers & Tables
             </div>
             <div>
               <FaArrowRight className="text-[#919191] w-[20px] h-[20px]" />
             </div>
-            <div className="text-[#919191] text-sm font-bold">Cart</div>
+            <div className="text-[#919191] text-sm cursor-pointer  font-bold">Cart</div>
           </div>
         </div>
       </>
@@ -175,7 +175,7 @@ const Checkout = () => {
               Do you have a Promo Code
             </p>
 
-            <div className="md:items-center -mb-[1630px] mt-2 flex p-4 gap-6 clear-start">
+            <div className="md:items-center -mb-[1630px] md:-mb-[0px] mt-2 flex p-4 gap-6 clear-start">
               <div className="w-[250px] h-[1700px] md:w-[50%] md:h-[50%]">
                 <img
                   className="w-full"
